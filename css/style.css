@@ -1,0 +1,140 @@
+body{
+  font-family: "Nunito Sans", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  color:  hsl(200, 15%, 8%)
+}
+
+.navbar{
+  background-color: hsl(0, 0%, 100%);
+}
+.card {
+  width: 18rem;
+  height: 20rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img-top {
+  height: 10rem;
+  object-fit: cover; 
+}
+
+.borders-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.border-label {
+  margin-right: 0.5rem;
+}
+
+
+
+.border-button {
+  margin-right: 5px; 
+  margin-bottom: 5px; 
+  border: none;
+  background-color: hsl(0, 0%, 100%);
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-btn{
+  border: none;
+  background-color: hsl(0, 0%, 100%);
+}
+.border-button:hover{
+  background-color: hsl(0, 0%, 100%);
+  color:  hsl(200, 15%, 8%)
+}
+
+
+.country-link {
+  text-decoration: none !important;
+  color: inherit !important; 
+}
+
+.country-link:hover {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+#dropdownMenuButton1{
+  background-color: hsl(0, 0%, 100%);
+  color:  hsl(200, 15%, 8%)
+}
+
+.dropdown-item.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.search-container input {
+  background-color: hsl(0, 0%, 100%);
+  color: #ffffff;
+  border: 2px solid hsl(0, 0%, 100%);
+}
+
+.search-container .input-group-text {
+  background-color: #333;
+  color: #ffffff;
+  border: 1px solid hsl(209, 23%, 22%);
+}
+
+
+body.dark-mode {
+  background-color: hsl(207, 26%, 17%);
+  color: #ffffff;
+}
+
+.dark-mode .navbar {
+  background-color: hsl(209, 23%, 22%);
+  color: #ffffff;
+}
+.dark-mode #dropdownMenuButton1{
+  background-color: hsl(209, 23%, 22%);
+  color: #ffffff;
+}
+.dark-mode .card{
+  background-color: hsl(209, 23%, 22%);
+  color: #ffffff;
+}
+.dark-mode .btn {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.dark-mode .btn-outline-dark {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.dark-mode .btn-outline-dark:hover {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+.dark-mode .main-btn{
+  background-color: hsl(209, 23%, 22%);
+  color: #ffffff;
+}
+.search-container.dark-mode input {
+  background-color: hsl(209, 23%, 22%);
+  color: #ffffff;
+  border: 1px solid hsl(209, 23%, 22%);
+}
+
+.search-container.dark-mode .input-group-text {
+  background-color: #333;
+  color: #ffffff;
+  border: 1px solid hsl(209, 23%, 22%);
+}
+
+.dark-mode .border-button{
+  background-color: hsl(209, 23%, 22%);
+  color: #ffffff;
+  
+}
