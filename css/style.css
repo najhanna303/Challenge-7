@@ -138,3 +138,18 @@ body.dark-mode {
   color: #ffffff;
   
 }
+
+@media (min-width: 1400px) {
+  .countrylisting .col-xl-3 {
+      flex: 0 0 auto;
+      width: 25%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .countrylisting .col-lg-4 {
+      flex: 0 0 auto;
+      width: 33.33333333%;
+  }
+}
+

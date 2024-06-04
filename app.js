@@ -16,28 +16,29 @@ document.addEventListener('DOMContentLoaded', () => {
     let countryData = [];
 
     const displayCountries = (countries) => {
+        const countryListingContainer = document.querySelector('.countrylisting');
         countryListingContainer.innerHTML = ''; 
         countries.forEach(country => {
-            const countryName = encodeURIComponent(country.name);
-            const column = `
-                <div class="col-md-6 col-lg-3 mb-5">
-                    <a href="detail.html?country=${countryName}" class="text-decoration-none country-link">
-                        <div class="card card-container" style="width: 18rem;">
-                            <img src=${country.flag} class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h6 class="fw-bold ms-2">${country.name}</h6>
-                                <div class="details">
-                                    <h5 class="ms-2 fs-6"><span class="fw-bold">population:</span> ${country.population}</h5>
-                                    <h5 class="ms-2 fs-6"><span class="fw-bold">region:</span> ${country.region}</h5>
-                                    <h5 class="ms-2 fs-6"><span class="fw-bold">capital:</span> ${country.capital}</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>`;
-            countryListingContainer.innerHTML += column;
+          const countryName = encodeURIComponent(country.name);
+          const column = `
+            <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+              <a href="detail.html?country=${countryName}" class="text-decoration-none country-link">
+                <div class="card card-container h-100">
+                  <img src="${country.flag}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h6 class="fw-bold ms-2">${country.name}</h6>
+                    <div class="details">
+                      <h5 class="ms-2 fs-6"><span class="fw-bold">population:</span> ${country.population}</h5>
+                      <h5 class="ms-2 fs-6"><span class="fw-bold">region:</span> ${country.region}</h5>
+                      <h5 class="ms-2 fs-6"><span class="fw-bold">capital:</span> ${country.capital}</h5>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>`;
+          countryListingContainer.innerHTML += column;
         });
-    };
+      };
     const filterByRegion = (region) => {
         const filteredCountries = countryData.filter(country => country.region === region);
         displayCountries(filteredCountries);
@@ -74,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Fetch country data and display initially
-    fetch('./rest-countries-api-with-color-theme-switcher-master/data.json')
+    fetch('./rest-countries-api-with-color-theme-switcher-master/data2.json')
     .then(response => response.json())
     .then(data => {
         countryData = data; // Store the country data for filtering
