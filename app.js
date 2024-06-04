@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Fetch country data and display initially
-    fetch('./rest-countries-api-with-color-theme-switcher-master/data2.json')
+    fetch('./rest-countries-api-with-color-theme-switcher-master/data.json')
     .then(response => response.json())
     .then(data => {
         countryData = data; // Store the country data for filtering
